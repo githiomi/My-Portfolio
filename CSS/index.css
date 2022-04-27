@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Eater&family=Fredericka+the+Great&family=IM+Fell+DW+Pica+SC&family=Love+Ya+Like+A+Sister&family=Luckiest+Guy&family=Markazi+Text&family=Niconne&family=Patrick+Hand+SC&family=Tajawal:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+/* Header CSS */
+#header{
+    background-image: url("../Assets/Images/daniel_githiomi.jpg");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.logo{
+    padding: 10px;
+}
+
+img.webLogo{
+    margin: 20px;
+    padding: 10px;
+}
+
+div.navigation{
+    margin-right: 10%;
+}
+
+div.navigation ul{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    list-style: none;
+}
+
+div.navigation ul li{
+    color: white;
+    cursor: pointer;
+}
+
+div.navigation ul li:hover{
+    transform: scale(1.07);
+    transform: transform 300ms;
+}
+
+div.navigation ul li a{
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 10px 40px;
+    color: white;
+    font-family: 'Love Ya Like A Sister', 'cursive';
+    font-size: 17px;
+}
+
+div.navigation ul li a:hover{
+    color: red;
+}
+
+#info{
+    width: 50%;
+    margin: 30px 100px;
+    padding: 10px;
+}
+
+div.name{
+    padding: 10px;
+    color: red;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+div.name:hover{
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+}
+
+div.moto{
+    margin: 20px;
+    padding: 20px;
+    font-size: 80px;
+    line-height: 80px;
+    font-family: 'Love Ya Like A Sister', 'cursive';
+}
+
+div.moto:hover{
+    transform: scale(1.03);
+    transition: all 0.5s ease-in-out;
+}
