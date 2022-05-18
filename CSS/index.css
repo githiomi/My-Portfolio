@@ -6,17 +6,40 @@
     box-sizing: border-box;
 }
 
+/* Universal Styles */
 body{
     background-color: black;
     color: white;
 }
+
+h2.sectionHeader{
+    color: red;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+h2.sectionHeader:after{
+    content: '';
+    background: red;
+    width: 30%;
+    height: 1px;
+    display: block;
+    margin: 10px auto;
+}
+
 /* Header CSS */
 #header{
     background-image: url("../Assets/Images/daniel_githiomi.jpg");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    height: 700px;
+    background-attachment: fixed;
 }
 
 #nav{
@@ -69,34 +92,126 @@ div.navigation ul li a:hover{
 }
 
 #info{
-    width: 50%;
+    width: 60%;
     margin: 30px 100px;
     padding: 10px;
 }
 
-div.name{
-    padding: 10px;
+.namePreText{
+    font-size: 20px;
+}
+
+p.name{
     color: red;
     letter-spacing: 1.5px;
-    font-size: 22px;
+    font-size: 70px;
     text-transform: uppercase;
     cursor: pointer;
-}
-
-div.name:hover{
-    transform: scale(1.02);
-    transition: all 0.5s ease-in-out;
-}
-
-div.moto{
-    margin: 20px;
-    padding: 20px;
-    font-size: 80px;
-    line-height: 80px;
     font-family: 'Love Ya Like A Sister', 'cursive';
 }
 
-div.moto:hover{
+p.name:hover{
     transform: scale(1.03);
+    transition: all 0.5s ease-in-out;
+}
+
+div.shortIntro{
+    margin: 5px;
+    padding: 5px;
+    font-size: 50px;
+}
+
+div.aboutMe{
+    margin: 5px;
+    padding: 5px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+p.aboutMeContent{
+    width: 85%;
+    font-size: 18px;
+    color: #a7a7a7;
+    padding: 10px;
+    font-weight: normal;
+}
+
+p.aboutMeContent:hover{
+    color: white;
+    transform: scale(1.01);
+    transform: transform 300ms;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Profile CSS */
+#profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profileImage{
+    width: 80%;
+}
+
+.profilePicture{
+    margin: 40px;
+    border-radius: 50%;
+}
+
+.profilePicture:hover{
+    transform: scale(1.02);
+    transform: transform 300ms;
+    transition: all 0.5s ease-in-out;
+}
+
+.profileContent{
+    margin: 30px;
+}
+
+.profileText{
+    padding: 100px;
+}
+
+.myInfo{
+    margin: 5px;
+    color: rgba(218, 218, 218, 0.8);
+    font-size: 19px;
+}
+
+.myInfo:hover{
+    transform: scale(1.02);
+    transform: transform 300ms;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+div.documentButtons{
+    padding: 20px 100px;
+}
+
+/* Footer CSS */
+.footerBase{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    /* Icons */
+i.fa, .footerNameLink{
+    text-decoration: none;
+    padding: 10px;
+    color: #b8b8b8;
+    --fa-beat-fade-opacity: 0.7; 
+    --fa-beat-fade-scale: 1.05;
+    --fa-animation-duration: 2s;
+}
+
+i.fa:hover, .footerNameLink:hover{
+    color: red;
+    --fa-beat-fade-opacity: 0; 
+    --fa-beat-fade-scale: 0;
+    --fa-animation-duration: 0;
     transition: all 0.5s ease-in-out;
 }
